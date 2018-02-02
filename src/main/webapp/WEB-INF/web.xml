@@ -107,4 +107,14 @@
     <servlet-name>GetNumberServlet</servlet-name>
     <url-pattern>/GetNumber.do</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>OperatorServlet</display-name>
+    <servlet-name>OperatorServlet</servlet-name>
+    <servlet-class>com.zj.servlet.OperatorServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OperatorServlet</servlet-name>
+    <url-pattern>/Operator.do</url-pattern>
+  </servlet-mapping>
 </web-app>

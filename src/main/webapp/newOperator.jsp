@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <HTML><HEAD><TITLE>中国移动业务管理系统</TITLE>
 <META http-equiv=Content-Type content="text/html; charset=gb2312">
 <META content="MSHTML 6.00.2600.0" name=GENERATOR>
@@ -96,7 +97,7 @@
             src="images/blank.gif" width=1 border=0><img src="images/Arrow1.gif" width="23" height="23"></TD>
           <TD width=165 height="29" bgColor=#7691c7>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A 
             class=nav 
-            href="#">配置业务费用</A></TD>
+            href="charge.jsp">配置业务费用</A></TD>
         </TR>
         <TR>
           <TD bgColor=#ffffff colSpan=2><IMG height=1 
@@ -179,13 +180,13 @@
           <TD><IMG height=2 src="images\blank(1).gif" width=574></TD></TR></TBODY></TABLE></TD></TR>
   <TR vAlign=top>
     <TD height="600" bgColor=#f1f3f9>
-    <form method="POST" action="--WEBBOT-SELF--">
-      <p>登录ID：<input type="text" name="T1" size="20" value="A00000001"></p>
-      <p>姓 名：<input type="text" name="T2" size="20" value="张三"></p>
-      <p>密码：<input type="password" name="T3" size="20" value="******"></p>
-      <p>密码确认：<input type="password" name="T4" size="20" value="******"></p>
-      <p>是否管理员：<input type="radio" value="V1" checked name="R1">是&nbsp;&nbsp;&nbsp; 
-      <input type="radio" name="R1" value="V2">否</p>
+    <form method="POST" action="Operator.do">
+      <p>登录ID：<input type="text" name="o_id" size="20" value=""></p>
+      <p>姓 名：<input type="text" name="o_name" size="20" value=""></p>
+      <p>密码：<input type="password" name="o_password" size="20" value=""></p>
+      <p>密码确认：<input type="password" name="o_password1" size="20" value=""></p>
+      <p>是否管理员：<input type="radio" value="1" checked name="o_admin">是&nbsp;&nbsp;&nbsp; 
+      <input type="radio" name="o_admin" value="0">否</p>
       <p><input type="submit" value="提交" name="B1"></p>
     </form>
     </TD>

@@ -4,7 +4,7 @@ public class Operator {
 	String o_id;
 	String o_name;
 	String o_pwd;
-	String is_Admin;
+	int is_Admin;
 	public String getO_id() {
 		return o_id;
 	}
@@ -23,20 +23,20 @@ public class Operator {
 	public void setO_pwd(String o_pwd) {
 		this.o_pwd = o_pwd;
 	}
-	public String getIs_Admin() {
+	public int getIs_Admin() {
 		return is_Admin;
 	}
-	public void setIs_Admin(String is_Admin) {
+	public void setIs_Admin(int is_Admin) {
 		this.is_Admin = is_Admin;
 	}
-	public Operator(String o_id, String o_name, String o_pwd, String is_Admin) {
+	public Operator(String o_id, String o_name, String o_pwd, int is_Admin) {
 		super();
 		this.o_id = o_id;
 		this.o_name = o_name;
 		this.o_pwd = o_pwd;
 		this.is_Admin = is_Admin;
 	}
-	public Operator(String o_id, String o_pwd, String is_Admin) {
+	public Operator(String o_id, String o_pwd, int is_Admin) {
 		super();
 		this.o_id = o_id;
 		this.o_pwd = o_pwd;
